@@ -7,7 +7,7 @@ export default function PricingTable() {
     {
       name: "Pack Starter",
       price: "99 €",
-      description: "Pour les petites marques qui veulent tester l’UGC",
+      description: "Pour les petites marques qui veulent tester l'UGC",
       features: [
         "1 vidéo témoignage (30-60s)",
         "1 vidéo unboxing",
@@ -17,6 +17,7 @@ export default function PricingTable() {
       ],
       highlighted: false,
       cta: "Commencer",
+      link: "https://buy.stripe.com/7sY4gz3UD17xceacaYeME00",
     },
     {
       name: "Pack Boost",
@@ -25,7 +26,7 @@ export default function PricingTable() {
       features: [
         "2 vidéos témoignages",
         "1 vidéo unboxing",
-        "1 vidéo “how to use” / démonstration",
+        "1 vidéo how to use / démonstration",
         "photos lifestyle",
         "Script et hook optimisés pour TikTok/Meta Ads",
         "Format 9:16 + 1:1 (carré) sur demande",
@@ -33,20 +34,22 @@ export default function PricingTable() {
       ],
       highlighted: true,
       cta: "Le Plus Populaire",
+      link: "https://buy.stripe.com/00w9ATfDleYn5PM2AoeME01",
     },
     {
       name: "Pack Pro",
-      price: "399 €",
+      price: "400 €",
       description: "Solution complète pour les marques établies.",
       features: [
         "5 vidéos variées (témoignage, demo, problème-solution, trend, etc.)",
         "6 photos lifestyle de haute qualité",
         "A/B testing : 2 hooks différents par vidéo",
         "Livraison rapide (5 jours)",
-        "Option “remake” si besoin",
+        "Option remake si besoin",
       ],
       highlighted: false,
       cta: "Commencer",
+      link: "https://buy.stripe.com/cNiaEX0Ir6rR1zw1wkeME02",
     },
   ]
 
@@ -88,7 +91,9 @@ export default function PricingTable() {
               className={`w-full ${plan.highlighted ? "" : "bg-muted text-foreground hover:bg-muted/80"}`}
               variant={plan.highlighted ? "default" : "outline"}
             >
-              <Link href="#contact">{plan.cta}</Link>
+              <Link href={plan.link} target="_blank" rel="noopener noreferrer">
+                {plan.cta}
+              </Link>
             </Button>
           </div>
         </div>

@@ -53,6 +53,12 @@ export default function LandingPage() {
                 Tarifs
               </Link>
               <Link
+                href="#contact"
+                className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Contact
+              </Link>
+              <Link
                 href="#faq"
                 className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
@@ -475,6 +481,33 @@ export default function LandingPage() {
               </div>
             </div>
             <TestimonialCarousel />
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2 text-center">
+                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+                  Contact
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Contactez-nous</h2>
+                <p className="max-w-[900px] mx-auto text-center text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Vous avez des questions ou vous souhaitez discuter de votre projet ? N'hésitez pas à nous contacter.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto max-w-md py-12">
+              <div className="flex flex-col items-center justify-center space-y-6 text-center">
+                <a
+                  href="mailto:flipsideugcontact@gmail.com"
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-lg font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  flipsideugcontact@gmail.com
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
