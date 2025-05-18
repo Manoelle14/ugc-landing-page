@@ -114,7 +114,7 @@ export default function LandingPage() {
                   {/* Main image */}
                   <div className="overflow-hidden rounded-2xl shadow-2xl">
                     <Image
-                      src="https://media.discordapp.net/attachments/1373321498873299074/1373340567819259994/IMG_4437.png?ex=682a0e92&is=6828bd12&hm=4ef527b0f6146b009ccff8aa5e2ad63b91c44ed2b1591ed5155c3f8c1664147c&=&format=webp&quality=lossless&width=1080&height=781"
+                      src="https://l4ubh7zqrbc6rpki.public.blob.vercel-storage.com/IMG_4437-KUjN2QwDkNEi9RcIw1viBIv8tjQZ4z.webp"
                       alt="UGC Content Example"
                       width={500}
                       height={600}
